@@ -1,0 +1,430 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#ph1 a {
+  text-decoration: none;
+  color:rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px #b2ec46;
+}
+#header {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    
+    transition: font-size 0.5s, height 0.5s;
+    -webkit-transition: font-size 0.5s, height 0.5s;
+    -moz-transition: font-size 0.5s, height 0.5s;
+
+}
+.aa {
+  text-align: center;
+}
+.aa a {
+  background-color:rgb(231, 255, 163);
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:1px 1px 1px #ffffff;
+  
+}
+.aa a:hover {
+    background-color: #555;
+    transition: 0.3s;
+    color: white;
+}
+
+#header img {
+
+  height: 100px;
+   transition: font-size 0.5s, height 0.5s;
+    -webkit-transition: font-size 0.5s, height 0.5s;
+    -moz-transition: font-size 0.5s, height 0.5s;
+
+}
+#header.small {
+  font-size: 15px;
+  height: 30px;
+}
+
+#header.small img {
+  height: 80px;
+}
+
+
+#menu
+{
+  height: 50px;
+  justify-content: center;
+  display:flex;
+  padding: 10px;
+
+}
+
+#menu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(191, 240, 169);
+  text-decoration: none;
+  color: black;
+  border: 3px solid white;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(231, 255, 163);
+  text-decoration: none;
+  color: black;
+  border: 3px solid white;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.product-card a {
+  background-color:rgb(173, 233, 173);
+	border-radius:28px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#181818;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+.product-card a:hover {
+    background-color: #555;
+    transition: 0.3s;
+    color: white;
+}
+
+#menu a:hover {
+    background-color: #555;
+    transition: 0.3s;
+    color: white;
+}
+
+
+#ph1 {
+  background-image: url("tlo.jpg");
+  background-color: #cccccc;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  
+  
+  
+}
+
+.fading {
+  animation: fadeEffect 3s; 
+}
+
+@keyframes fadeEffect { 
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+  main {
+      background-color: #dea482;
+      width: 100%;
+      height: 600px;
+      padding: 30px;
+  }
+
+.koloc {
+
+  padding: 50px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 15pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#onas img {
+  border-radius: 5%;
+}
+
+h2 {
+  font-size: 15pt;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.column {
+  flex: 24%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  transition: 0.3s;
+  border-radius: 5%;
+}
+.column img:hover {
+  opacity: 0.7;
+}
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+@-webkit-keyframes zoom-out {
+  from {transform:scale(1)}
+  to {transform:scale(0)}
+}
+@keyframes zoom-out {
+  from {transform:scale(1)}
+  to {transform:scale(0)}
+}
+
+
+#lightbox {
+  
+  position: fixed; z-index: 999;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+ 
+  
+  background: rgba(0, 0, 0, 0.5);
+ 
+  
+  display: flex;
+  align-items: center;
+  align-items: center;
+ 
+  
+  visibility: hidden;
+  opacity: 0;
+ 
+  
+  transition: opacity ease 0.4s;
+}
+ 
+
+#lightbox.show {
+  visibility: visible;
+  opacity: 1;
+}
+ 
+
+#lightbox img {
+  margin: 0 auto;
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  
+}
+
+
+.product-card {
+  flex: 1 16%;
+  background-color: white;
+  border-radius: 5%;
+  margin: 6px;
+  padding: 10px;
+  
+}
+
+.product-image img {
+  max-width: 100%;
+}
+
+.product-info {
+  margin-top: auto;
+}
+
+.b {
+  height: 200px;
+}
+
+.c { height: 1000px;}
+
+h6 {
+  font-size: 10pt;
+}
+
+.buttons {
+  background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+
+}
+.buttons:hover {
+	background-color:#b9dea5;
+  transition: 0.3s;
+}
+.buttons:active {
+	position:relative;
+	top:1px;
+}
+
+.login-show {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.cart {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.box1 {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align:center;
+}
+
+.styled-table {
+  
+
+  font-size: 0.9em;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  font-size: 15pt;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px 8px rgba(114, 110, 110, 0.3);    
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+
+  
+  
+}
+
+.styled-table thead tr {
+  background-color: rgb(231, 255, 163);
+  text-align: center;
+  
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    font-weight: normal;
+    
+}
+
+.styled-table tbody tr {
+  border-bottom: 3px solid #dddddd;
+  background-color: rgb(191, 240, 169);
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+
+
+select {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  -webkit-padding-end: 20px;
+  -moz-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -moz-padding-start: 2px;
+  background-color: #f3f3f3; 
+  background-image: url(../images/select-arrow.png), -webkit-linear-gradient(top, #E5E5E5, #F4F4F4); /* For Chrome and Safari */
+  background-image: url(../images/select-arrow.png), -moz-linear-gradient(top, #E5E5E5, #F4F4F4); /* For old Firefox (3.6 to 15) */
+  background-image: url(../images/select-arrow.png), -ms-linear-gradient(top, #E5E5E5, #F4F4F4); /* For pre-releases of Internet Explorer  10*/
+  background-image: url(../images/select-arrow.png), -o-linear-gradient(top, #E5E5E5, #F4F4F4); /* For old Opera (11.1 to 12.0) */
+  background-image: url(../images/select-arrow.png), linear-gradient(to bottom, #E5E5E5, #F4F4F4); /* Standard syntax; must be last */
+  background-position: center right;
+  background-repeat: no-repeat;
+  border: 1px solid #AAA;
+  border-radius: 2px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  color: #555;
+  font-size: inherit;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
